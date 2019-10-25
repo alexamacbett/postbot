@@ -32,7 +32,16 @@ Finally, in order for the bot to work, you will need to write your content creat
 
 inside createContent(). Otherwise, your function is likely to be a little more complicated. Remember that a result of createContent() whether it be static or procedurally generated, will be the contents of every status the bot posts, either regularly at the interval you have specified, or in response to somebody directly mentioning the bot's account.
 
-Go forth and create bots!
+## Running the bot
+
+In a command line window opened in the same folder, run:
+
+```bash
+python PostBot.py
+```
+Your bot will throw an exception in that command window if it runs into an immediate problem. Otherwise, try waiting for your interval to elapse or tooting at your bot from a different account to test if it will reply.
+
+Happy botting!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
