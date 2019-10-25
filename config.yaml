@@ -1,0 +1,8 @@
+#To get your client key, client secret and access token create an app from the development tab of the settings menu on your instance.
+client_key: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+client_secret: 0000000000000000000000000000000000000000000000000000000000000000
+access_token: bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+base_url: https://example.instance #This is the url of the instance you want the bot to post to.
+handle: examplebot #The handle of the bot on the instance. Don't include the @ or a space at the end.
+interval: 60 #The number of minutes between posts the bot makes on its main timeline.
+since_id: 0 #The id of the last notification the bot received that it successfully responded to. Leave this at 0, the bot will update it on its own.
