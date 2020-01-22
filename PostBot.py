@@ -31,7 +31,7 @@ def main():
 				print("posted status", status['url'])
 			except Exception as exc:
 				print("Error tooting: " + str(exc))
-			next = datetime.utcnow().replace(minute=0, second=0) + timedelta(hours=config['interval'])
+			next = datetime.utcnow().replace(minute=0, second=0) + timedelta(minutes=config['interval'])
 		config["since_id"] = checkNotifications(api, bot, config["since_id"], config["handle"])
 		with open(bot.config_path, 'w') as outfile:
 			try:
