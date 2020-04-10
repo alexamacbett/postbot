@@ -33,11 +33,14 @@ def main():
 				print("Error tooting: " + str(exc))
 			next = datetime.utcnow().replace(minute=0, second=0) + timedelta(minutes=config['interval'])
 		config["since_id"] = checkNotifications(api, bot, config["since_id"], config["handle"])
-		with open(bot.config_path, 'w') as outfile:
-			try:
-				yaml.dump(config, outfile)
-			except yaml.YAMLError as exc:
-				print("Error saving to config: " + exc)
+		try:
+			with open(bot.config_path, 'w') as outfile:
+				try:
+					yaml.dump(config, outfile)
+				except yaml.YAMLError as exc:
+					print("Error saving to config: " + str(exc))
+		except Exception as err:
+			print("Error opening config to save to: " + str(err))
 			
 def checkNotifications(api, bot, since, handle):
 	notifications = []
