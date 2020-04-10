@@ -4,10 +4,11 @@ Postbot is a template for simple bots designed to post procedurally generated co
 
 ## Installation
 
-You will need [Python 3](https://www.python.org/) Once installed, use pip to install pyyaml, which will allow python to parse the YAML file format the bot's settings are stored in
+You will need [Python 3](https://www.python.org/) Once installed, use pip to install pyyaml, which will allow python to parse the YAML file format the bot's settings are stored in, and Mastodon.py, which will allow the bot to understand what it's connecting to.
 
 ```bash
 pip install pyyaml
+pip install Mastodon.py
 ```
 
 ## Setting up a Mastodon account and application for your bot
